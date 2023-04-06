@@ -4,42 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7164397d-45e9-4286-a921-34481165c42f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReadMe.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraud/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraud/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraud/src/main/java/cloud.app.fraud/FraudApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraud/src/main/java/cloud.app.fraud/FraudCheckHistory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraud/src/main/java/cloud.app.fraud/FraudCheckHistoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraud/src/main/java/cloud.app.fraud/FraudCheckResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraud/src/main/java/cloud.app.fraud/FraudCheckService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraud/src/main/java/cloud.app.fraud/FraudController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraud/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraud/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/FraudCheckResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/UserApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/UserConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/UserRegisterRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/resources/log4j2.properties" afterDir="false" />
+    <list default="true" id="7164397d-45e9-4286-a921-34481165c42f" name="Changes" comment="UserModule and FraudModule communicating with RestTemplate">
+      <change afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/java/cloud/app/eurekaserver/EurekaServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/java/cloud/app/eurekaserver/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/banner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReadMe.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ReadMe.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/src/main/java/cloud.app.fraud/FraudApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/java/cloud.app.fraud/FraudApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/UserApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/UserConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/UserConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +39,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JpbToolWindowState">
@@ -76,6 +64,13 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2NPtc0tHCNTYO4AyuCiXYvnyuxt" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -131,7 +126,21 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.UserApplication ">
+  <component name="RunManager" selected="Spring Boot.EurekaServerApplication">
+    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" />
+      <module name="eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cloud.app.eurekaserver.EurekaServerApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cloud.app.eurekaserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FraudApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="fraud" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cloud.app.fraud.FraudApplication" />
@@ -159,10 +168,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.EurekaServerApplication" />
+      <item itemvalue="Spring Boot.FraudApplication" />
+      <item itemvalue="Spring Boot.UserApplication " />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.UserApplication " />
         <item itemvalue="Spring Boot.FraudApplication" />
+        <item itemvalue="Spring Boot.EurekaServerApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -175,8 +190,16 @@
       <option name="presentableId" value="Default" />
       <updated>1679577623856</updated>
       <workItem from="1679577626607" duration="6587000" />
-      <workItem from="1680771541222" duration="4579000" />
+      <workItem from="1680771541222" duration="11755000" />
     </task>
+    <task id="LOCAL-00001" summary="UserModule and FraudModule communicating with RestTemplate">
+      <created>1680783998670</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680783998671</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,5 +215,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="UserModule and FraudModule communicating with RestTemplate" />
+    <option name="LAST_COMMIT_MESSAGE" value="UserModule and FraudModule communicating with RestTemplate" />
   </component>
 </project>

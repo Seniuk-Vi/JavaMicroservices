@@ -17,7 +17,7 @@ public record UserService(UserRepository userRepository, RestTemplate restTempla
 
         // todo: check if fraudster
         FraudCheckResponse fraudCheckResponse = restTemplate.getForObject(
-                "http://localhost:8081/api/v1/fraud-check/{userId}",
+                "http://FRAUD/api/v1/fraud-check/{userId}",
                 FraudCheckResponse.class,
                 user.getId()
         );
