@@ -1,21 +1,20 @@
 server:
-  port: 8081
+  port: 8082
 spring:
   application:
-    name: fraud
-
+    name: notification
   datasource:
-    username: 'postgres'
-    password: '1085'
-    url: jdbc:postgresql://localhost:5433/fraud
+    password: 1085
+    url: jdbc:postgresql://localhost:5433/notification
+    username: postgres
   jpa:
+    hibernate:
+      ddl-auto: create-drop
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
-        format_sql: 'true'
-    hibernate:
-      ddl-auto: create-drop
-    show_sql: 'true'
+        format_sql: true
+    show-sql: true
 eureka:
   client:
     service-url:

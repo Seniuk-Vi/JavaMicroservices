@@ -1,12 +1,13 @@
 package cloud.app.user;
 
+import cloud.app.clients.notification.NotificationRequest;
 import cloud.app.clients.fraud.FraudCheckResponse;
 import cloud.app.clients.fraud.FraudClient;
+import cloud.app.clients.notification.NotificationClient;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
 @Service
-public record UserService(UserRepository userRepository, FraudClient fraudClient) {
+public record UserService(UserRepository userRepository, FraudClient fraudClient, NotificationClient notificationClient) {
     public void registerUser(UserRegisterRequest userRegisterRequest) {
         User user = User.builder()
                 .firstName(userRegisterRequest.firstName())
@@ -24,5 +25,13 @@ public record UserService(UserRepository userRepository, FraudClient fraudClient
             throw new IllegalStateException("fraudster");
         }
         // todo: send notification
+        // todo: make it async. i.e add to queue
+        notificationClient.sendNotification(
+                new NotificationRequest(
+                        user.getId(),
+                        user.getEmail(),
+                        String.format("Hi %s, welcome to Amigoscode...", user.getFirstName())
+                )
+        );
     }
 }
