@@ -4,24 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7164397d-45e9-4286-a921-34481165c42f" name="Changes" comment="Added OpenFeign instead of RestTemplate">
-      <change afterPath="$PROJECT_DIR$/clients/src/main/java/cloud/app/clients/notification/NotificationClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clients/src/main/java/cloud/app/clients/notification/NotificationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/cloud/app/notification/Notification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/cloud/app/notification/NotificationApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/cloud/app/notification/NotificationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/cloud/app/notification/NotificationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/cloud/app/notification/NotificationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="7164397d-45e9-4286-a921-34481165c42f" name="Changes" comment="Added banner to Notification service">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/src/main/java/cloud.app.fraud/FraudCheckResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/src/main/java/cloud.app.fraud/FraudController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/java/cloud.app.fraud/FraudController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fraud/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,6 +80,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "D:/Work/CloudStorage_Microservices/parent/notification/src/main/resources",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -107,6 +97,9 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="cloud.app.fraud" />
       <recent name="cloud.app" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Work\CloudStorage_Microservices\parent\notification\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Work\CloudStorage_Microservices\parent\fraud\src\main\resources" />
@@ -126,7 +119,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.NotificationApplication">
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
     <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="ACTIVE_PROFILES" />
       <module name="eureka-server" />
@@ -181,7 +174,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="Spring Boot.NotificationApplication" />
       <item itemvalue="Spring Boot.EurekaServerApplication" />
       <item itemvalue="Spring Boot.FraudApplication" />
@@ -193,6 +196,7 @@
         <item itemvalue="Spring Boot.NotificationApplication" />
         <item itemvalue="Spring Boot.UserApplication " />
         <item itemvalue="Spring Boot.EurekaServerApplication" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -206,7 +210,7 @@
       <updated>1679577623856</updated>
       <workItem from="1679577626607" duration="6587000" />
       <workItem from="1680771541222" duration="13976000" />
-      <workItem from="1681999032631" duration="6462000" />
+      <workItem from="1681999032631" duration="7963000" />
     </task>
     <task id="LOCAL-00001" summary="UserModule and FraudModule communicating with RestTemplate">
       <created>1680783998670</created>
@@ -229,7 +233,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682007889951</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added Notification service">
+      <created>1682010856427</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682010856427</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added banner to Notification service">
+      <created>1682011010174</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682011010174</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,6 +268,8 @@
     <MESSAGE value="UserModule and FraudModule communicating with RestTemplate" />
     <MESSAGE value="Added Eureka Service Discovery" />
     <MESSAGE value="Added OpenFeign instead of RestTemplate" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added OpenFeign instead of RestTemplate" />
+    <MESSAGE value="Added Notification service" />
+    <MESSAGE value="Added banner to Notification service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added banner to Notification service" />
   </component>
 </project>
