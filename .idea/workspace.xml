@@ -4,25 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7164397d-45e9-4286-a921-34481165c42f" name="Changes" comment="UserModule and FraudModule communicating with RestTemplate">
-      <change afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/java/cloud/app/eurekaserver/EurekaServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/java/cloud/app/eurekaserver/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/banner.txt" afterDir="false" />
+    <list default="true" id="7164397d-45e9-4286-a921-34481165c42f" name="Changes" comment="Added Eureka Service Discovery">
+      <change afterPath="$PROJECT_DIR$/clients/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clients/src/main/java/cloud/app/clients/fraud/FraudCheckResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clients/src/main/java/cloud/app/clients/fraud/FraudClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReadMe.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ReadMe.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/src/main/java/cloud.app.fraud/FraudApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/java/cloud.app.fraud/FraudApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/UserApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/UserConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/UserConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/UserConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +87,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "81085adaee61182daedc79b2b560e059"
+    "spring.configuration.checksum": "8603c23429bc85103d4a4378fecc37f9"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -175,9 +167,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.EurekaServerApplication" />
         <item itemvalue="Spring Boot.UserApplication " />
         <item itemvalue="Spring Boot.FraudApplication" />
-        <item itemvalue="Spring Boot.EurekaServerApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +182,8 @@
       <option name="presentableId" value="Default" />
       <updated>1679577623856</updated>
       <workItem from="1679577626607" duration="6587000" />
-      <workItem from="1680771541222" duration="11755000" />
+      <workItem from="1680771541222" duration="13976000" />
+      <workItem from="1681999032631" duration="3475000" />
     </task>
     <task id="LOCAL-00001" summary="UserModule and FraudModule communicating with RestTemplate">
       <created>1680783998670</created>
@@ -199,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680783998671</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added Eureka Service Discovery">
+      <created>1680790381201</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680790381201</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,6 +218,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="UserModule and FraudModule communicating with RestTemplate" />
-    <option name="LAST_COMMIT_MESSAGE" value="UserModule and FraudModule communicating with RestTemplate" />
+    <MESSAGE value="Added Eureka Service Discovery" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Eureka Service Discovery" />
   </component>
 </project>
