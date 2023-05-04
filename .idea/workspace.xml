@@ -4,19 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7164397d-45e9-4286-a921-34481165c42f" name="Changes" comment="Added Sleuth (Zipkin)">
+    <list default="true" id="7164397d-45e9-4286-a921-34481165c42f" name="Changes" comment="ApiGW">
+      <change afterPath="$PROJECT_DIR$/apigw/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apigw/src/main/java/cloud/app/apigw/ApiGWApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apigw/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apigw/src/main/resources/banner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/src/main/java/cloud/app/notification/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/java/cloud/app/notification/model/Notification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/src/main/java/cloud/app/notification/NotificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/java/cloud/app/notification/controller/NotificationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/src/main/java/cloud/app/notification/NotificationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/java/cloud/app/notification/repository/NotificationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/src/main/java/cloud/app/notification/NotificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/java/cloud/app/notification/service/NotificationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/FraudCheckResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/UserRegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/model/UserRegisterRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +119,20 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+  <component name="RunManager" selected="Spring Boot.ApiGWApplication">
+    <configuration name="ApiGWApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="apigw" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cloud.app.apigw.ApiGWApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cloud.app.apigw.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="ACTIVE_PROFILES" />
       <module name="eureka-server" />
@@ -179,17 +187,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="envFilePath" value="" />
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="Spring Boot.ApiGWApplication" />
       <item itemvalue="Spring Boot.NotificationApplication" />
       <item itemvalue="Spring Boot.EurekaServerApplication" />
       <item itemvalue="Spring Boot.FraudApplication" />
@@ -197,11 +196,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.UserApplication " />
-        <item itemvalue="Spring Boot.FraudApplication" />
+        <item itemvalue="Spring Boot.ApiGWApplication" />
         <item itemvalue="Spring Boot.EurekaServerApplication" />
         <item itemvalue="Spring Boot.NotificationApplication" />
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Spring Boot.FraudApplication" />
+        <item itemvalue="Spring Boot.UserApplication " />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +215,7 @@
       <workItem from="1679577626607" duration="6587000" />
       <workItem from="1680771541222" duration="13976000" />
       <workItem from="1681999032631" duration="8220000" />
-      <workItem from="1683189857153" duration="2144000" />
+      <workItem from="1683189857153" duration="5802000" />
     </task>
     <task id="LOCAL-00001" summary="UserModule and FraudModule communicating with RestTemplate">
       <created>1680783998670</created>
@@ -260,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682012443993</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="organizing folders">
+      <created>1683192816616</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1683192816616</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,6 +290,8 @@
     <MESSAGE value="Added Notification service" />
     <MESSAGE value="Added banner to Notification service" />
     <MESSAGE value="Added Sleuth (Zipkin)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Sleuth (Zipkin)" />
+    <MESSAGE value="organizing folders" />
+    <MESSAGE value="ApiGW" />
+    <option name="LAST_COMMIT_MESSAGE" value="ApiGW" />
   </component>
 </project>
