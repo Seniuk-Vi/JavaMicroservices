@@ -5,13 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7164397d-45e9-4286-a921-34481165c42f" name="Changes" comment="ApiGW">
-      <change afterPath="$PROJECT_DIR$/apigw/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apigw/src/main/java/cloud/app/apigw/ApiGWApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apigw/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apigw/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amqp/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amqp/src/main/java/cloud/app/amqp/RabbitMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amqp/src/main/java/cloud/app/amqp/RabbitMQMessageProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/java/cloud/app/notification/config/NotificationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/java/cloud/app/notification/rabbitmq/NotificationConsumer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notification/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/src/main/java/cloud/app/notification/NotificationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/java/cloud/app/notification/NotificationApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/UserApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +128,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ApiGWApplication">
+  <component name="RunManager" selected="Docker.docker-compose.yml.rabbitmq: Compose Deployment">
     <configuration name="ApiGWApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="apigw" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cloud.app.apigw.ApiGWApplication" />
@@ -173,34 +182,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserApplication " type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
-      <option name="ACTIVE_PROFILES" />
-      <module name="user" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="cloud.app.user.UserApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cloud.app.user.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="docker-compose.yml.rabbitmq: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="rabbitmq" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Docker.docker-compose.yml.rabbitmq: Compose Deployment" />
       <item itemvalue="Spring Boot.ApiGWApplication" />
       <item itemvalue="Spring Boot.NotificationApplication" />
       <item itemvalue="Spring Boot.EurekaServerApplication" />
       <item itemvalue="Spring Boot.FraudApplication" />
-      <item itemvalue="Spring Boot.UserApplication " />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.ApiGWApplication" />
+        <item itemvalue="Spring Boot.FraudApplication" />
         <item itemvalue="Spring Boot.EurekaServerApplication" />
         <item itemvalue="Spring Boot.NotificationApplication" />
-        <item itemvalue="Spring Boot.FraudApplication" />
-        <item itemvalue="Spring Boot.UserApplication " />
+        <item itemvalue="Docker.docker-compose.yml.rabbitmq: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -215,7 +223,7 @@
       <workItem from="1679577626607" duration="6587000" />
       <workItem from="1680771541222" duration="13976000" />
       <workItem from="1681999032631" duration="8220000" />
-      <workItem from="1683189857153" duration="5802000" />
+      <workItem from="1683189857153" duration="8047000" />
     </task>
     <task id="LOCAL-00001" summary="UserModule and FraudModule communicating with RestTemplate">
       <created>1680783998670</created>
@@ -266,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683192816616</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="ApiGW">
+      <created>1683198088012</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683198088012</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
