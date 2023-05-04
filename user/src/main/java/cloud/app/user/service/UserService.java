@@ -1,9 +1,12 @@
-package cloud.app.user;
+package cloud.app.user.service;
 
 import cloud.app.clients.notification.NotificationRequest;
 import cloud.app.clients.fraud.FraudCheckResponse;
 import cloud.app.clients.fraud.FraudClient;
 import cloud.app.clients.notification.NotificationClient;
+import cloud.app.user.model.User;
+import cloud.app.user.model.UserRegisterRequest;
+import cloud.app.user.repository.UserRepository;
 import org.springframework.stereotype.Service;
 
 @Service

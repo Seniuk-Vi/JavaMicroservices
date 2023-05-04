@@ -1,4 +1,4 @@
-package cloud.app.notification;
+package cloud.app.notification.model;
 
 import lombok.*;
 

@@ -1,4 +1,4 @@
-package cloud.app.user;
+package cloud.app.user.model;
 
 public record UserRegisterRequest(
         String firstName,

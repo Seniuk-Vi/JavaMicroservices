@@ -4,13 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7164397d-45e9-4286-a921-34481165c42f" name="Changes" comment="Added banner to Notification service">
+    <list default="true" id="7164397d-45e9-4286-a921-34481165c42f" name="Changes" comment="Added Sleuth (Zipkin)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/src/main/java/cloud/app/notification/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/java/cloud/app/notification/model/Notification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/src/main/java/cloud/app/notification/NotificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/java/cloud/app/notification/controller/NotificationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/src/main/java/cloud/app/notification/NotificationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/java/cloud/app/notification/repository/NotificationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/src/main/java/cloud/app/notification/NotificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/java/cloud/app/notification/service/NotificationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/FraudCheckResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/UserRegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/model/UserRegisterRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +90,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "8603c23429bc85103d4a4378fecc37f9"
+    "spring.configuration.checksum": "edddd646c0278db6b6cee1e302e03464"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -192,10 +197,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.FraudApplication" />
-        <item itemvalue="Spring Boot.NotificationApplication" />
         <item itemvalue="Spring Boot.UserApplication " />
+        <item itemvalue="Spring Boot.FraudApplication" />
         <item itemvalue="Spring Boot.EurekaServerApplication" />
+        <item itemvalue="Spring Boot.NotificationApplication" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       </list>
     </recent_temporary>
@@ -210,7 +215,8 @@
       <updated>1679577623856</updated>
       <workItem from="1679577626607" duration="6587000" />
       <workItem from="1680771541222" duration="13976000" />
-      <workItem from="1681999032631" duration="7963000" />
+      <workItem from="1681999032631" duration="8220000" />
+      <workItem from="1683189857153" duration="2144000" />
     </task>
     <task id="LOCAL-00001" summary="UserModule and FraudModule communicating with RestTemplate">
       <created>1680783998670</created>
@@ -247,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682011010174</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added Sleuth (Zipkin)">
+      <created>1682012443993</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1682012443993</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,6 +283,7 @@
     <MESSAGE value="Added OpenFeign instead of RestTemplate" />
     <MESSAGE value="Added Notification service" />
     <MESSAGE value="Added banner to Notification service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added banner to Notification service" />
+    <MESSAGE value="Added Sleuth (Zipkin)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Sleuth (Zipkin)" />
   </component>
 </project>

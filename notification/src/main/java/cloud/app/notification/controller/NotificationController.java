@@ -1,7 +1,8 @@
-package cloud.app.notification;
+package cloud.app.notification.controller;
 
 
 import cloud.app.clients.notification.NotificationRequest;
+import cloud.app.notification.service.NotificationService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;

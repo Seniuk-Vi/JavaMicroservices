@@ -1,5 +1,7 @@
-package cloud.app.user;
+package cloud.app.user.controller;
 
+import cloud.app.user.model.UserRegisterRequest;
+import cloud.app.user.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

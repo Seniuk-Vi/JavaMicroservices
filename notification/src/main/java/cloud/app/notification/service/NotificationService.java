@@ -1,7 +1,9 @@
-package cloud.app.notification;
+package cloud.app.notification.service;
 
 
 import cloud.app.clients.notification.NotificationRequest;
+import cloud.app.notification.model.Notification;
+import cloud.app.notification.repository.NotificationRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package cloud.app.fraud;
+package cloud.app.fraud.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

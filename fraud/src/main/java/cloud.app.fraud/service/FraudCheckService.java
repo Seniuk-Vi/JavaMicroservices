@@ -1,8 +1,9 @@
-package cloud.app.fraud;
+package cloud.app.fraud.service;
 
+import cloud.app.fraud.model.FraudCheckHistory;
+import cloud.app.fraud.repository.FraudCheckHistoryRepository;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Service

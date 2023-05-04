@@ -1,4 +1,4 @@
-package cloud.app.user;
+package cloud.app.user.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
