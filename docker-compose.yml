@@ -9,11 +9,10 @@ services:
     volumes:
       - postgres:/data/postgres
     ports:
-      - "5433:5432"
+      - "5432:5432"
     networks:
       - postgres
     restart: unless-stopped
-
   pgadmin:
     container_name: pgadmin
     image: dpage/pgadmin4
@@ -33,16 +32,89 @@ services:
     container_name: zipkin
     ports:
       - "9411:9411"
+    networks:
+      - spring
   rabbitmq:
     image: rabbitmq:3.9.11-management-alpine
     container_name: rabbitmq
     ports:
-      - "5672:5672" # working ports
-      - "15672:15672" # management console
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - spring
+  eureka-server:
+    image: vitaliiseniuk/eureka-server:latest
+    container_name: eureka-server
+    ports:
+      - "8761:8761"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    networks:
+      - spring
+    depends_on:
+      - zipkin
+  apigw:
+    image: vitaliiseniuk/apigw:latest
+    container_name: apigw
+    ports:
+      - "8083:8083"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    networks:
+      - spring
+    depends_on:
+      - zipkin
+      - eureka-server
+  user:
+    image: vitaliiseniuk/user:latest
+    container_name: user
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    networks:
+      - spring
+      - postgres
+    depends_on:
+      - zipkin
+      - eureka-server
+      - postgres
+      - rabbitmq
+  fraud:
+    image: vitaliiseniuk/fraud:latest
+    container_name: fraud
+    ports:
+      - "8081:8081"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    networks:
+      - spring
+      - postgres
+    depends_on:
+      - zipkin
+      - eureka-server
+      - postgres
+      - rabbitmq
+  notification:
+    image: vitaliiseniuk/notification:latest
+    container_name: notification
+    ports:
+      - "8082:8082"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    networks:
+      - spring
+      - postgres
+    depends_on:
+      - zipkin
+      - eureka-server
+      - postgres
+      - rabbitmq
 networks:
   postgres:
     driver: bridge
-
+  spring:
+    driver: bridge
 
 volumes:
   postgres:

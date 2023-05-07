@@ -4,23 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7164397d-45e9-4286-a921-34481165c42f" name="Changes" comment="ApiGW">
-      <change afterPath="$PROJECT_DIR$/amqp/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amqp/src/main/java/cloud/app/amqp/RabbitMQConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amqp/src/main/java/cloud/app/amqp/RabbitMQMessageProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/cloud/app/notification/config/NotificationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/cloud/app/notification/rabbitmq/NotificationConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="7164397d-45e9-4286-a921-34481165c42f" name="Changes" comment="RabbitMQ">
+      <change afterPath="$PROJECT_DIR$/apigw/src/main/resources/application-docker.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application-docker.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fraud/src/main/resources/application-docker.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/resources/application-docker.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/resources/application-docker.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amqp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/amqp/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigw/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/apigw/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/clients/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/java/cloud/app/eurekaserver/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notification/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notification/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/src/main/java/cloud/app/notification/NotificationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/java/cloud/app/notification/NotificationApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/UserApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/cloud/app/user/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,15 +47,11 @@
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
-        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
-        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
     <option name="myId2Visible">
       <map>
-        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
-        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
         <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
@@ -68,6 +64,11 @@
       <MavenGeneralSettings>
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
+    </option>
+    <option name="enabledProfiles">
+      <list>
+        <option value="build-docker-image" />
+      </list>
     </option>
   </component>
   <component name="ProjectId" id="2NPtc0tHCNTYO4AyuCiXYvnyuxt" />
@@ -90,11 +91,17 @@
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
     "last_opened_file_path": "D:/Work/CloudStorage_Microservices/parent/notification/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "edddd646c0278db6b6cee1e302e03464"
+    "settings.editor.selected.configurable": "project.propCompiler",
+    "spring.configuration.checksum": "8a082581da04c3fb63d3fdb7283ccdc0",
+    "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -109,6 +116,8 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Work\CloudStorage_Microservices\parent\notification\src\main\resources" />
+      <recent name="D:\Work\CloudStorage_Microservices\parent\fraud\src\main\resources" />
+      <recent name="D:\Work\CloudStorage_Microservices\parent\eureka-server\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Work\CloudStorage_Microservices\parent\fraud\src\main\resources" />
@@ -128,27 +137,13 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml.rabbitmq: Compose Deployment">
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
     <configuration name="ApiGWApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="apigw" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cloud.app.apigw.ApiGWApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cloud.app.apigw.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <option name="ACTIVE_PROFILES" />
-      <module name="eureka-server" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="cloud.app.eurekaserver.EurekaServerApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cloud.app.eurekaserver.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -182,12 +177,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="docker-compose.yml.rabbitmq: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.postgres: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
-              <option value="rabbitmq" />
+              <option value="postgres" />
             </list>
           </option>
           <option name="sourceFilePath" value="docker-compose.yml" />
@@ -196,19 +199,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Docker.docker-compose.yml.rabbitmq: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.postgres: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="Spring Boot.ApiGWApplication" />
       <item itemvalue="Spring Boot.NotificationApplication" />
-      <item itemvalue="Spring Boot.EurekaServerApplication" />
       <item itemvalue="Spring Boot.FraudApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.postgres: Compose Deployment" />
         <item itemvalue="Spring Boot.ApiGWApplication" />
-        <item itemvalue="Spring Boot.FraudApplication" />
-        <item itemvalue="Spring Boot.EurekaServerApplication" />
         <item itemvalue="Spring Boot.NotificationApplication" />
-        <item itemvalue="Docker.docker-compose.yml.rabbitmq: Compose Deployment" />
+        <item itemvalue="Spring Boot.FraudApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -223,7 +226,12 @@
       <workItem from="1679577626607" duration="6587000" />
       <workItem from="1680771541222" duration="13976000" />
       <workItem from="1681999032631" duration="8220000" />
-      <workItem from="1683189857153" duration="8047000" />
+      <workItem from="1683189857153" duration="11719000" />
+      <workItem from="1683276565758" duration="8692000" />
+      <workItem from="1683295804903" duration="35000" />
+      <workItem from="1683295968295" duration="355000" />
+      <workItem from="1683296353441" duration="12037000" />
+      <workItem from="1683359105447" duration="12834000" />
     </task>
     <task id="LOCAL-00001" summary="UserModule and FraudModule communicating with RestTemplate">
       <created>1680783998670</created>
@@ -281,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683198088012</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="RabbitMQ">
+      <created>1683200537809</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1683200537809</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,6 +322,8 @@
     <MESSAGE value="Added Sleuth (Zipkin)" />
     <MESSAGE value="organizing folders" />
     <MESSAGE value="ApiGW" />
-    <option name="LAST_COMMIT_MESSAGE" value="ApiGW" />
+    <MESSAGE value="RabbitMq" />
+    <MESSAGE value="RabbitMQ" />
+    <option name="LAST_COMMIT_MESSAGE" value="RabbitMQ" />
   </component>
 </project>
